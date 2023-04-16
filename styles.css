@@ -78,6 +78,10 @@ body {
         background-position 800ms ease;
     width: 100%;
     z-index: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Set a maximum width for the image */
 }
 
 #menu-items:hover ~ #menu-background-pattern {
@@ -108,3 +112,17 @@ body {
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     transition: opacity 400ms ease;
 }
+
+#menu-background-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Set a maximum width for the image */
+  }
+  
+  @media only screen and (max-width: 767px) { /* Target mobile devices */
+    #menu-background-image {
+      width: 90%; /* Set the width of the image to a percentage value */
+    }
+  }
+  
